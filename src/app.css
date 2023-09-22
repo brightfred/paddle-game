@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    background-color: #301934; /* Dark Purple */
+    color: #FFD700; /* Bumblebee Yellow */
+    height: 100vh;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 5px;
+}
+
+#gameCanvas {
+    display: block;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    border: 2px solid #FFD700; /* Bumblebee Yellow */
+}
+
+.btn {
+    cursor: pointer;
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    outline: none;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn:hover {
+    background-color: #301934; /* Dark Purple */
+    color: #FFD700; /* Bumblebee Yellow */
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background-color: #301934;
+    color: #FFD700;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    text-align: center;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
